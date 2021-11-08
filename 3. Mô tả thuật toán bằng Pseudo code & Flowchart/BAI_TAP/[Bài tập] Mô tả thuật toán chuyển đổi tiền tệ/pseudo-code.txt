@@ -1,0 +1,5 @@
+BEGIN
+  INPUT N USD;
+  M = N*23000;
+  OUTPUT M;
+END

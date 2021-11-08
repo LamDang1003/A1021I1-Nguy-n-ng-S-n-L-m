@@ -1,0 +1,5 @@
+BEGIN
+  INPUT a, b, c;
+  find max;
+  OUTPUT max;
+END

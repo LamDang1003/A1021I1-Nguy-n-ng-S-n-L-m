@@ -1,0 +1,14 @@
+BEGIN
+   INPUT point; // Point <= 100;
+   if point >= 75
+       Display A;
+   Else if point < 35 
+       Display E;
+   Else if 60 <= point < 75
+       Display B;
+   Else if 45 <= point < 60
+       Display C;
+   Else 
+       Display D
+   OUTPUT "Pass";
+END
