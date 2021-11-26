@@ -1,5 +1,7 @@
 BEGIN
-  INPUT N ( a1, a2, a3,...., an);
-  Find max;
+  INPUT N ( a1, a2, a3,...., an), max = 0;
+ 
+  for ( i=1; i<=n; i++)
+  { if max < ai then max = ai;}  
   OUTPUT max;
 END

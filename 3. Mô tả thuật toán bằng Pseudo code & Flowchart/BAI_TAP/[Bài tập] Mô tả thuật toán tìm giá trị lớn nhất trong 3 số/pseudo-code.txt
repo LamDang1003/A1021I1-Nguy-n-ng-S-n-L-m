@@ -1,5 +1,9 @@
 BEGIN
   INPUT a, b, c;
-  find max;
+  max = a;
+  if max < b then max = b;
+     if max < c then max = c;
+  else if max < c then max = c;
+  else max = a;
   OUTPUT max;
 END
