@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', "Altair", 'Dubhe', 'Regulus'];
+    let array2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function nameStar(array) {
+        let a = prompt("nhập vào tên một ngôi sao:");
+        for ( let i = 0; i < array.length; i++){
+            if (a === array[i]){
+                return array.index = i;
+            }else{
+                console.log("không tìm thấy! vui lòng nhập lại!");
+            }
+        }
+
+    }
+    let output = nameStar(array1);
+    console.log(array2[nameStar(array1)]);
+</script>
+</body>
+</html>

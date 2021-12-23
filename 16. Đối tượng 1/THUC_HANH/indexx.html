@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<body>
 <script>
-    function iterArr(arr) {
-        let sum = 0;
-        for ( let i=0; i<= arr.length-1; i++){
-            sum = sum + arr[i];
+    function  tinh_tong(array) {
+        var tong = 0;
+        for (var i = 0; i < array.length; i++) {
+            tong = tong + array[i];
         }
-        return sum;
+
+        return tong;
     }
-    let a;
-    let ans = iterArr(a);
-    document.write(iterArr(a));
+
+    var soNguyen = [1, 2, 3, 4, 6, 9];
+
+    var tong = tinh_tong(soNguyen);
+
+    console.log('tổng của mảng là ' + tong);
 </script>
 </body>
 </html>
