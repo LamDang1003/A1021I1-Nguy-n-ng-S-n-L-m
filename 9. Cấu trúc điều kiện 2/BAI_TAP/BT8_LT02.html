@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isAge() {
+        let age = document.getElementById("age").value;
+        let res = document.getElementById("result8");
+        if (isNaN(age)) {
+            res.innerHTML = "dữ liệu không hợp lệ"
+        } else if ( age >120 || age<0) {
+            res.innerHTML = "dữ liệu nhập vào không phải tuổi"
+        } else {
+            res.innerHTML = "dữ liệu nhập vào là tuổi"
+        }
+    }
+</script>
+</body>
+</html>

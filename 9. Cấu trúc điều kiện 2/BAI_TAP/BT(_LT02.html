@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkTriangle() {
+        let a = document.getElementById("a9").value;
+        let b = document.getElementById("b9").value;
+        let c = document.getElementById("c9").value;
+        let res = document.getElementById("result9");
+        if (isNaN(a)||isNaN(b)||isNaN(c)) {
+            res.innerHTML = "Dữ liệu không hợp lệ"
+        } else if ( (a>0 && b>0 && c>0) && ((a + b > c) || (a + c > b) || (b + c > a)) ) {
+            res.innerHTML = "Dữ liệu là các cạnh của một hình tam giác"
+        } else {
+            res.innerHTML = "Dữ liệu nhập vào không phải là các cạnh của một tam giác"
+        }
+    }
+</script>
+</body>
+</html>

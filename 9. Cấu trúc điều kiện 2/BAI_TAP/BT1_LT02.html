@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function TransCtoF() {
+        let c = document.getElementById("celcius").value;
+        let res = document.getElementById("result1");
+        if (isNaN(c)) {
+            res.innerHTML = `Input must be a number.`
+        } else {
+            res.innerHTML =  `Result : ${c * 9/5 + 32} °F`
+        }
+    }
+</script>
+</body>
+</html>

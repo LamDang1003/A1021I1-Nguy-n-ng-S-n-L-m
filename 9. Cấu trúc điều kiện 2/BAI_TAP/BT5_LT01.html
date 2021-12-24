@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kt = parseInt(prompt("Nhập số điểm kt: "));
+    let gk = parseInt(prompt("Nhập số điểm gk: "));
+    let ck = parseInt(prompt("Nhập số điểm ck: "));
+    let DTB = (kt + 2*gk + 3*ck)/6;
+    if(DTB >= 8){
+        console.log("học lưc giỏi : " + DTB);
+    }else if(DTB < 8 && DTB >= 6.6){
+        console.log("học lưc khá : " + DTB);
+    }else if(DTB < 6.6 && DTB >= 4){
+        console.log("học lưc trung bình : " + DTB);
+    }else{
+        console.log("học lưc yếu kém : " + DTB);
+    }
+</script>
+</body>
+</html>

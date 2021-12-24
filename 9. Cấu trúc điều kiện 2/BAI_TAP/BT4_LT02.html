@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function areaRectangle() {
+        let aRectangle = document.getElementById("aRectangle").value;
+        let bRectangle = document.getElementById("bRectangle").value;
+        let res = document.getElementById("result4");
+        if (isNaN(aRectangle)||isNaN(bRectangle)) {
+            res.innerHTML = `Input must be a number.`
+        } else {
+            res.innerHTML =  `Result : ${aRectangle*bRectangle} m²`
+        }
+    }
+</script>
+</body>
+</html>
