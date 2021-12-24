@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="result" style="text-align: center"> </h1>
+<script>
+    function Fibonancci(n) {
+        if (n < 2) {
+            return 1;
+        } else {
+            return Fibonancci(n - 2) + Fibonancci(n - 1);
+        }
+    }
+
+    function display() {
+        let n = prompt("Nhập số số Finbonancci đầu tiên cần để tính tổng :")
+        let res = document.getElementById("result");
+        let totalOfFibo = 0 ;
+        for (var i = 1; i <= n; i++) {
+            totalOfFibo += Fibonancci(i);
+        }
+        res.innerHTML = totalOfFibo;
+    }
+    display();
+</script>
+</body>
+</html>
