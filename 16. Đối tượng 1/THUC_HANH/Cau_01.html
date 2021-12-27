@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Hieu_Ch_le(arr) {
+        var tong_ch = 0;
+        var tong_le = 0;
+        var hieu = 0;
+        for (let i = 0; i<arr.length; i++){
+            if ((arr[i] % 2) ==0){
+                tong_ch = tong_ch + arr[i];
+            }else{
+                tong_le = tong_le + arr[i];
+            }
+            hieu = (tong_ch - tong_le);
+        }
+        console.log("hieu cua 2 tong: "+hieu);
+    }
+    let a =[];
+    for(let j=0; j<=20;j++){
+        a[j] = parseInt(prompt("Nhap cac phan tu "));
+        if (a[j] == 0){
+            break;
+        }
+    }
+
+    document.write("mang a =" +a)
+    let kq = Hieu_Ch_le(a);
+</script>
+</body>
+</html>

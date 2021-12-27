@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let MyPhone = function( seri, ten, namesx, money) {
+        this.seri = seri;
+        this.Ten = ten;
+        this.namesx = namesx;
+        this.money = money;
+    };
+
+    this.getSeri = function () {
+        return this.seri;
+    }
+    this.getName = function () {
+        return this.ten;
+    }
+    this.getNamesx = function () {
+        return this.namesx;
+    }
+    this.getMoney = function () {
+        return this.money;
+    }
+
+    this.setSeri = function(seri) {
+        this.seri  = seri;
+    }
+    this.setNam = function(ten) {
+        this.ten  = ten;
+    }
+    this.setNamesx = function(namesx) {
+        this.namesx  = namesx;
+    }
+    this.setMoney = function(money) {
+        this.money  = money;
+    }
+
+
+
+    let phone1 = new MyPhone(100300, iphone, Apple, 200);
+    let seri = phone1.getSeri();
+    let ten = phone1.getTen();
+    let namesx = phone1.getNamesx();
+    let money = phone1.getMoney();
+    alert(seri + "/" + ten + "/" + namesx + "/" + money);
+    console.log(phone1);
+
+</script>
+</body>
+</html>
