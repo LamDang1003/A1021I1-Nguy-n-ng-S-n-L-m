@@ -1,0 +1,13 @@
+*{
+    font-family: "French Script MT";
+    text-align: center;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+table{
+    border-collapse:collapse;
+    width: 100%;
+}
+
