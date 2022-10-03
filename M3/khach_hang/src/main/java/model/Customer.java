@@ -1,17 +1,62 @@
 package model;
 
-public class Khach_hang {
-    protected int id;
-    protected String name;
-    protected String email;
+
+public class Customer {
+    private int id;
+    private String name;
+    private int old;
+    private int nPhone;
+    private String email;
+    private String address;
+    private int category;
+    private String categoryName;
+
+    public Customer() {
+    }
+
+    public int getnPhone() {
+        return nPhone;
+    }
+
+    public void setnPhone(int nPhone) {
+        this.nPhone = nPhone;
+    }
+
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
+
+    public Customer(int id, String name, int old, int nPhone, String email, String address, int category, String categoryName) {
         this.id = id;
-        this.ten = ten;
-        this.sdt = sdt;
-        this.tuoi = tuoi;
-        this.hinh_thuc = hinh_thuc;
-        this.id_hinh_thuc = id_hinh_thuc;
-        this.ten_hinh_thuc = ten_hinh_thuc;
-        this.ghi_chu = ghi_chu;
+        this.name = name;
+        this.old = old;
+        this.nPhone = nPhone;
+        this.email = email;
+        this.address = address;
+        this.category = category;
+        this.categoryName = categoryName;
+    }
+
+    public Customer(String name, int old, int nPhone, String email, String address, int category) {
+        this.name = name;
+        this.old = old;
+        this.nPhone = nPhone;
+        this.email = email;
+        this.address = address;
+        this.category = category;
+    }
+
+
+    public int getCategory() {
+        return category;
+    }
+
+    public void setCategory(int category) {
+        this.category = category;
     }
 
     public int getId() {
@@ -22,59 +67,35 @@ public class Khach_hang {
         this.id = id;
     }
 
-    public String getTen() {
-        return ten;
+    public String getName() {
+        return name;
     }
 
-    public void setTen(String ten) {
-        this.ten = ten;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getSdt() {
-        return sdt;
+    public int getOld() {
+        return old;
     }
 
-    public void setSdt(int sdt) {
-        this.sdt = sdt;
+    public void setOld(int old) {
+        this.old = old;
     }
 
-    public int getTuoi() {
-        return tuoi;
+    public String getEmail() {
+        return email;
     }
 
-    public void setTuoi(int tuoi) {
-        this.tuoi = tuoi;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public int getHinh_thuc() {
-        return hinh_thuc;
+    public String getAddress() {
+        return address;
     }
 
-    public void setHinh_thuc(int hinh_thuc) {
-        this.hinh_thuc = hinh_thuc;
-    }
-
-    public int getId_hinh_thuc() {
-        return id_hinh_thuc;
-    }
-
-    public void setId_hinh_thuc(int id_hinh_thuc) {
-        this.id_hinh_thuc = id_hinh_thuc;
-    }
-
-    public String getTen_hinh_thuc() {
-        return ten_hinh_thuc;
-    }
-
-    public void setTen_hinh_thuc(String ten_hinh_thuc) {
-        this.ten_hinh_thuc = ten_hinh_thuc;
-    }
-
-    public String getGhi_chu() {
-        return ghi_chu;
-    }
-
-    public void setGhi_chu(String ghi_chu) {
-        this.ghi_chu = ghi_chu;
+    public void setAddress(String address) {
+        this.address = address;
     }
 }

@@ -1,0 +1,8 @@
+controller/ProductController.java
+ controller.ProductController
+model/Product.java
+ model.Product
+repository/ProductRepository.java
+ repository.ProductRepository
+service/ProductService.java
+ service.ProductService
